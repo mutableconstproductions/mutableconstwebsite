@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.0.0' # Use CoffeeScript for .js.coffee assets and view
 gem 'jquery-rails'             # Use jquery & jquery ui as the JavaScript library
 gem 'jquery-ui-rails'
 
+gem 'superfish-rails'          # Superfish JQuery extension for Menu's
+
 gem 'turbolinks'               # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.0'       # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
