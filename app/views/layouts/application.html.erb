@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
 	
-  <title>MutableConst</title>
-  
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
-  
+	<title> Mutable Const </title>
+  	
+  	<% if false %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<link rel="stylesheet" media="screen" href="/assets/superfish.css">
+
+	<script src="/assets/hoverIntent.js"></script>
+	<script src="/assets/superfish.js"></script>
+	
+	<div>
+		<h1> Mutable Const </h1>
+		<ul class="">
+			<li> 
+				<%= link_to(:users, users_path) %>
+				<ul class="">
+					<li> <%= link_to(:register, new_user_path) %> </li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- initialise Superfish -->
+	<script>
+
+		//~ jQuery(document).ready(function() {
+			//~ jQuery('ul.sf-menu').superfish();
+		//~ });
+
+	</script>
+	<% end %>
+	  
 </head>
+
 <body>
+
+<h1> Welcome to Mutable Const!! </h1>
 
 <%= yield %>
 
 </body>
+
 </html>
